@@ -9,8 +9,6 @@
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-
-    // 🔑 Important pour tes imports absolus
     "baseUrl": "src",
     "paths": {
       "@/*": ["*"],
