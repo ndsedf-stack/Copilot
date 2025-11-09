@@ -1,0 +1,43 @@
+hybrid-master-react/
+├── next.config.js
+├── package.json
+├── postcss.config.js
+├── tailwind.config.js
+├── public/
+│   ├── ding.mp3
+│   ├── body-map.svg
+│   ├── icons.svg
+│   └── logo.svg
+└── src/
+    ├── app/
+    │   ├── globals.css
+    │   ├── layout.tsx
+    │   ├── page.tsx                     # Accueil
+    │   ├── sessions/
+    │   │   ├── page.tsx                 # Catalogue par semaine/jour
+    │   │   └── [week]/[day]/page.tsx    # Séance HM61 détaillée (édition)
+    │   ├── stats/page.tsx               # Dashboard analytics + filtres
+    │   └── profile/page.tsx             # Réglages (RPE, thème…)
+    ├── components/
+    │   ├── Navbar.tsx
+    │   ├── SessionProgressBar.tsx
+    │   ├── TimerDial.tsx
+    │   ├── ExerciseCardEditable.tsx
+    │   ├── SupersetCardEditable.tsx
+    │   ├── AddExerciseModal.tsx
+    │   └── charts/
+    │       ├── MuscleDistributionChart.tsx
+    │       ├── ProgressChart.tsx
+    │       ├── SetCountChart.tsx
+    │       ├── BodyMap.tsx
+    │       └── WorkoutCalendar.tsx
+    ├── data/
+    │   ├── hm61.ts                      # Adaptateur HM61 → Session[]
+    │   └── library.ts                   # Bibliothèque exercices (recherche)
+    ├── lib/
+    │   ├── types.ts
+    │   ├── storage.ts
+    │   ├── analytics.ts
+    │   ├── share.ts
+    │   └── format.ts
+    └── styles/                          # tokens si besoin (optionnel)
