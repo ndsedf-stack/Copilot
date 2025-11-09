@@ -1,12 +1,12 @@
 "use client";
 import { useMemo, useState } from "react";
-import { Storage } from "../../lib/storage";
-import { volumeByMuscle, seriesForExercise, setCountPerMuscle, totalVolume } from "../../lib/analytics";
-import MuscleDistributionChart from "../../components/charts/MuscleDistributionChart";
-import ProgressChart from "../../components/charts/ProgressChart";
-import SetCountChart from "../../components/charts/SetCountChart";
-import BodyMap from "../../components/charts/BodyMap";
-import WorkoutCalendar from "../../components/charts/WorkoutCalendar";
+import { Storage } from "@/lib/storage";
+import { volumeByMuscle, seriesForExercise, setCountPerMuscle, totalVolume } from "@/lib/analytics";
+import MuscleDistributionChart from "@/components/charts/MuscleDistributionChart";
+import ProgressChart from "@/components/charts/ProgressChart";
+import SetCountChart from "@/components/charts/SetCountChart";
+import BodyMap from "@/components/charts/BodyMap";
+import WorkoutCalendar from "@/components/charts/WorkoutCalendar";
 
 const muscleOptions = ["Quadriceps","Fessiers","Ischio-jambiers","Dos","Trapèzes","Biceps","Triceps","Épaules"];
 
